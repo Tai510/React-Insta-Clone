@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,38 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.search-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  font-size: 70px;
+}
+
+.ig-text {
+  font-family: 'Wendy One', sans-serif;
+  font-size: 20px;
+}
+
+.side-icons {
+  display: flex;
+  margin-top: 25px;
+}
+
+.profile {
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.liked {
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.compass {
+  font-size: 30px;
+  padding-right: 20px;
 }
