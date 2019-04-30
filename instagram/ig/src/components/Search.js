@@ -10,7 +10,7 @@ const Search = props => {
     <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
     </div>
     <div className='ig-text'>
-    <a href="https://www.instagram.com">instagram</a>
+    <a href="https://www.instagram.com">Instagram</a>
     </div>
     
  </div> {/* search-bar end */}
