@@ -16,6 +16,7 @@ const PostContain = (props) => {
          </div>
          <div className='likes'><strong>{`${props.item.likes} likes`}</strong></div>
          <Comments data={props.item.comments} likes={props.item.likes}/>
+         <input className='comment-input' placeholder='Add a comment ...' type="text" id="site-search" aria-label="Search through site content"/>
      </div>  /* post end */
    )
 
