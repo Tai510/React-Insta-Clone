@@ -7,12 +7,16 @@ const PostContain = (props) => {
   const [commentInput, setCommentInput] = React.useState("")
   const addComment = (e, username)=>{
     e.preventDefault()
+    console.log(props.item)
 props.item.comments.push({
   username:username,
   text:commentInput
+});
+setCommentInput("")
+}
+
   
-})
-  }
+
    return (
      <div className='post'>
          <div className='thumbnail-container'>
@@ -28,7 +32,7 @@ props.item.comments.push({
          <Comments data={props.item.comments} likes={props.item.likes}/>
          
          
-    <form onSubmit={e=> addComment(e, "Tashi")}>
+    <form onSubmit={e=> addComment(e, "tr3zzy510")}>
     <input className='comment-input' placeholder='Add a comment ...' type="text" id="site-search" onChange={e=>setCommentInput(e.target.value)} value={commentInput}/>
     </form>
      </div>  /* post end */
