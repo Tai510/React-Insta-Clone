@@ -25,13 +25,13 @@ const Search = props => {
     <div className='side-icons'>
     
     <div className='compass'>
-    <i class="far fa-compass"></i>
+    <i className="far fa-compass"></i>
     </div>
     <div className='liked'>
-    <i class="far fa-heart"></i>
+    <i className="far fa-heart"></i>
     </div>
     <div className='profile'>
-    <i class="far fa-user"></i>
+    <i className="far fa-user"></i>
     </div> 
     
     </div> {/* side-icons end */}

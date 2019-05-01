@@ -6,9 +6,9 @@ const Comments = props => {
     return (
         <div>
           {
-             props.data.map((item) => {
+             props.data.map((item, index) => {
                  return (
-                    <Comment {...item} likes={props.likes}/>
+                    <Comment {...item} likes={props.likes} key={index}/>
                  )
              }) 
           }

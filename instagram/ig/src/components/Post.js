@@ -8,8 +8,8 @@ const Post = (props) => {
     return (
       <div>
           {
-             props.data.map((item) => {
-                 return <PostContain item={item} />
+             props.data.map((item, index) => {
+                 return <PostContain item={item} key={index} {...props} />
              }) 
           }
       </div>    

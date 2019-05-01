@@ -7,14 +7,25 @@ import Post from './components/Post';
 
 
 
+
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: dummyData
+      data: dummyData ,
+      // commentInput: '',
+      // stored: [],
     };
   }
 
+   componentDidMount(){
+     this.setState({
+       data: dummyData,
+     });
+   }
+  
+  
 
   render ()  {
     return (
