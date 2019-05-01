@@ -3,8 +3,10 @@ import Comments from "./Comments"
 
 
 
-const PostContain = (props) => {
-  const [commentInput, setCommentInput] = React.useState("")
+const PostContain = (props) => { 
+const [commentInput, setCommentInput] = React.useState("")
+let [likes, setLikes] = React.useState(props.item.likes)
+  console.log(commentInput)
   const addComment = (e, username)=>{
     e.preventDefault()
     console.log(props.item)
@@ -12,10 +14,14 @@ props.item.comments.push({
   username:username,
   text:commentInput
 });
+
 setCommentInput("")
 }
 
-  
+const incrementLikes = ()=>{
+  let iLike = likes++;
+  setLikes(iLike)
+}
 
    return (
      <div className='post'>
@@ -25,10 +31,10 @@ setCommentInput("")
          </div>
          <div className='img'><img src={`${props.item.imageUrl}`} alt="post"/></div>
          <div className='page-icons'>
-         <div><i className="far fa-heart"></i></div>
+         <div onClick={incrementLikes} ><i className="far fa-heart"></i></div>
          <div><i className="far fa-comment"></i></div>
          </div>
-         <div className='likes'><strong>{`${props.item.likes} likes`}</strong></div>
+         <div className='likes' /* onChange={e=>setLikeInput(e.target.value)} value={LikeInput} */><strong>{`${likes} likes`}</strong></div>
          <Comments data={props.item.comments} likes={props.item.likes}/>
          
          

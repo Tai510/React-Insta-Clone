@@ -13,26 +13,27 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: dummyData ,
-      // commentInput: '',
-      // stored: [],
+      data: [] ,
+      likes: this.likes   
     };
   }
+ 
+  componentDidMount() {
+    this.setState({data : dummyData}) 
+  }
 
-   componentDidMount(){
-     this.setState({
-       data: dummyData,
-     });
-   }
-  
-  
+  addLike = () => {
+    console.log("working")
+    let likes = this.state.likes + 1;
+    this.setState({ likes: likes});
+    
+};
 
   render ()  {
     return (
     <div className="App">
       <Search />
-      <Post data={this.state.data}/>
-      
+      <Post  addLike={this.addLike} data={this.state.data}/>
       
     </div>
    );
