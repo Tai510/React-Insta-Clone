@@ -2,7 +2,7 @@
  const Comment = ({username, text , likes})=>{
      return (
          <div className='comment-section'>
-         <div><span><strong>{username}</strong>{text}</span> </div>
+         <div><strong>{username}</strong> <span>{text}</span> </div>
          </div>
      )
  }
