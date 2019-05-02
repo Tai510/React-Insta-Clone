@@ -1,26 +1,43 @@
 import React from 'react'
 
+
+
+
 const Search = props => {
+  // let [username , setUsernames] = React.useState(props.item.username);
+
+  // const searchUser = () => {
+  //   let search = username;
+  //   setUsernames(search)
+  // }
+  
   return (
   <div className='header'>
 
 <div className='search-logo'>
 
     <div className='logo'>
-    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.instagram.com"><i className="fab fa-instagram"></i></a>
     </div>
     <div className='ig-text'>
     <a href="https://www.instagram.com">Instagram</a>
     </div>
     
- </div> {/* search-bar end */}
-    
+ </div> {/* search-logo end */}
+
+ 
     <div className='search-bar'>
        <div className='search-link'>
-       <input className='input' placeholder='search' type="text" id="site-search" aria-label="Search through site content"/>
+       <form onSubmit={props.search}>
+       <input 
+            className='input' 
+            placeholder='search' 
+            type="text" 
+            id="site-search"
+            onChange={props.search} />
+       </form>
        </div> 
     </div>
-
 
     <div className='side-icons'>
     

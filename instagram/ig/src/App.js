@@ -14,7 +14,8 @@ class App extends Component {
     super();
     this.state = {
       data: [] ,
-      likes: this.likes   
+      likes: this.likes,
+      filterData: []
     };
   }
  
@@ -22,18 +23,22 @@ class App extends Component {
     this.setState({data : dummyData}) 
   }
 
-  addLike = () => {
+  username = (e) => {
     console.log("working")
-    let likes = this.state.likes + 1;
-    this.setState({ likes: likes});
-    
-};
+     const findUser = this.state.data.filter(post => {
+        if(post.username.includes(e.target.value)) {
+          return post
+        } 
+    })
+    this.setState({filterData: findUser})
+  }
+  
 
   render ()  {
     return (
     <div className="App">
-      <Search />
-      <Post  addLike={this.addLike} data={this.state.data}/>
+      <Search search={this.username} />
+      <Post data={this.state.filterData.length ? this.state.filterData : this.state.data} />
       
     </div>
    );

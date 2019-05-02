@@ -18,7 +18,7 @@ props.item.comments.push({
 setCommentInput("")
 }
 
-const incrementLikes = ()=>{
+const incrementLikes = () => {
   let iLike = likes++;
   setLikes(iLike)
 }
