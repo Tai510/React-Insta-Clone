@@ -27,12 +27,13 @@ class Login extends React.Component {
         return(
         <div className='loginPage'>
             <div className='header-text'>
-            <i className="fab fa-instagram"></i>
+            <i id="ig" className="fab fa-instagram"></i>
             <h1>Instagram</h1>
             </div>
-            <form> 
+            <form className='placehold'> 
                 <div className='username'>
                 <input 
+                id='username'
                 type='text'
                 name='username'
                 value={this.state.username}
@@ -40,7 +41,8 @@ class Login extends React.Component {
                 onChange={this.handleChange}/>
                 </div>    
                 <div className='password'>
-                <input  
+                <input 
+                id='password' 
                 type='text'
                 name='password'
                 value={this.state.password}
@@ -53,7 +55,7 @@ class Login extends React.Component {
                 <p>------------------OR------------------</p>
             </div>
             <div className='fb'>
-            <i class="fab fa-facebook-square"></i> 
+            <i id="fb" class="fab fa-facebook-square"></i> 
             <p>Log in with Facebook</p>
             </div>
             

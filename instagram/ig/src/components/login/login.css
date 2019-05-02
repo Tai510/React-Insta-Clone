@@ -12,18 +12,20 @@
     color: white;
 }
 
-.fa-instagram {
+#ig {
     font-size: 80px;
     margin-top: 50px;
+    text-shadow: 1px 1px 2px black;
 }
 
-input {
+.placehold input {
     background-color: #E83A87;
     height: 25px;
     width: 120px;
     border-radius: 10px;
     border: 2px solid white;
     text-align: center;
+    opacity: 1; 
 }
 
 .username {
@@ -41,15 +43,18 @@ input {
     width: 120px;
     border-radius: 10px;
     border: 2px solid white;
+    text-shadow: 1px 1px 2px black;
 }
-
-::placeholder { 
-    color: white;
-    opacity: 1; 
-  }
 
 .or {
     color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .fb {
@@ -57,10 +62,12 @@ input {
     display: flex;
     text-align: center;
     margin-left: 313px;
+    text-shadow: 1px 1px 2px black;
 }
 
-.fa-facebook-square {
+#fb {
     font-size: 30px;
     padding-top: 10px;
     margin-right: 10px;
+    text-shadow: 1px 1px 2px black;
 }
