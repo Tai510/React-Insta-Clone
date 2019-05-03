@@ -36,20 +36,27 @@ font-size: 40px;
 text-shadow: 1px 1px 2px black;
 `;
 
-const Facebook = styled.div `
+const FacebookLine = styled.div `
     color: white;
     display: flex;
     text-align: center;
     margin-left: 313px;
-    text-shadow: 1px 1px 2px black;
 `;
 
-const FacebookLogo = styled.i `
+const FacebookP = styled.p `
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 300px;
+    padding-top: 3px;
+`;
+
+const FacebookLogo = styled.div `
     font-size: 30px;
     padding-top: 10px;
     margin-right: 10px;
     text-shadow: 1px 1px 2px black;
-`
+    color: white;
+`;
 
 const Input = styled.input `
     background-color: #E83A87;
@@ -63,10 +70,12 @@ const Input = styled.input `
 
 const UserName = styled.div `
     margin-bottom: 15px;
+    color: white;
 `;
 
 const Password = styled.div `
     margin-bottom: 15px;
+    color: white;
 `;
 
 const Submit = styled.button `
@@ -82,6 +91,7 @@ const OR = styled.div `
     color: white;
     text-shadow: 1px 1px 2px black;
 `
+
 // styled components end
 
 
@@ -135,10 +145,12 @@ class Login extends React.Component {
             <OR className='or'>
                 <p>------------------OR------------------</p>
             </OR>
-            <Facebook className='fb'>
-            <FacebookLogo id="fb" class="fab fa-facebook-square"></FacebookLogo> 
-            <p>Log in with Facebook</p>
-            </Facebook>
+            <FacebookLine className='fb'>
+            <FacebookLogo>
+            <i class="fab fa-facebook-square"></i>
+            </FacebookLogo> 
+            <FacebookP>Log in with Facebook</FacebookP>
+            </FacebookLine>
             
         </LoginPage> /* loginPage end */
         )

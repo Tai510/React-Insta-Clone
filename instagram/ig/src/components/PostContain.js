@@ -86,7 +86,7 @@ const incrementLikes = () => {
          <div onClick={incrementLikes} ><Hearts className="far fa-heart"></Hearts></div>
          <div><i className="far fa-comment"></i></div>
          </PageIcons>
-         <Likes className='likes' /* onChange={e=>setLikeInput(e.target.value)} value={LikeInput} */><strong>{`${likes} likes`}</strong></Likes>
+         <Likes /* onChange={e=>setLikeInput(e.target.value)} value={LikeInput} */><strong>{`${likes} likes`}</strong></Likes>
          <Comments data={props.item.comments} likes={props.item.likes}/>
          
          
