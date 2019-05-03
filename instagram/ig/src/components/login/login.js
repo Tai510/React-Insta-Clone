@@ -2,7 +2,92 @@ import React from 'react'
 import './login.css'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Button } from 'reactstrap';
- 
+import styled from 'styled-components';
+
+
+
+
+
+// styled components start
+
+const LoginPage = styled.div `
+    margin-top: 100px;
+    text-align: center;
+    border: 2px solid black;
+    width: 800px;
+    height: 500px;
+    margin-left: 300px;
+    background-color: #E83A87;
+`;
+
+const HeaderText = styled.div `
+    color: white;
+`;
+
+const IgLogo = styled.i `
+    font-size: 80px;
+    margin-top: 50px;
+    text-shadow: 1px 1px 2px black;
+`;
+
+const H1 = styled.h1 `
+font-family: 'Pacifico', cursive;
+font-size: 40px;
+text-shadow: 1px 1px 2px black;
+`;
+
+const Facebook = styled.div `
+    color: white;
+    display: flex;
+    text-align: center;
+    margin-left: 313px;
+    text-shadow: 1px 1px 2px black;
+`;
+
+const FacebookLogo = styled.i `
+    font-size: 30px;
+    padding-top: 10px;
+    margin-right: 10px;
+    text-shadow: 1px 1px 2px black;
+`
+
+const Input = styled.input `
+    background-color: #E83A87;
+    height: 25px;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+    opacity: 1; 
+`;
+
+const UserName = styled.div `
+    margin-bottom: 15px;
+`;
+
+const Password = styled.div `
+    margin-bottom: 15px;
+`;
+
+const Submit = styled.button `
+    background-color: #E83A87;
+    color: #F8F8F8;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-shadow: 1px 1px 2px black;
+`
+const OR = styled.div `
+    color: white;
+    text-shadow: 1px 1px 2px black;
+`
+// styled components end
+
+
+
+
+
 
 class Login extends React.Component {
     constructor() {
@@ -25,41 +110,39 @@ class Login extends React.Component {
 
     render() {
         return(
-        <div className='loginPage'>
-            <div className='header-text'>
-            <i id="ig" className="fab fa-instagram"></i>
-            <h1>Instagram</h1>
-            </div>
-            <form className='placehold'> 
-                <div className='username'>
-                <input 
-                id='username'
+        <LoginPage>
+            <HeaderText>
+            <IgLogo id="ig" className="fab fa-instagram"></IgLogo>
+            <H1>Instagram</H1>
+            </HeaderText>
+            <form> 
+                <UserName>
+                <Input 
                 type='text'
                 name='username'
                 value={this.state.username}
                 placeholder='Username' 
                 onChange={this.handleChange}/>
-                </div>    
-                <div className='password'>
-                <input 
-                id='password' 
+                </UserName>    
+                <Password>
+                <Input  
                 type='text'
                 name='password'
                 value={this.state.password}
                 placeholder='Password'
                 onChange={this.handleChange}/>   
-                </div>  
+                </Password>  
             </form>
-            <button className='submit' onClick={this.handleLogin}>Log in</button>
-            <div className='or'>
+            <Submit onClick={this.handleLogin}>Log in</Submit>
+            <OR className='or'>
                 <p>------------------OR------------------</p>
-            </div>
-            <div className='fb'>
-            <i id="fb" class="fab fa-facebook-square"></i> 
+            </OR>
+            <Facebook className='fb'>
+            <FacebookLogo id="fb" class="fab fa-facebook-square"></FacebookLogo> 
             <p>Log in with Facebook</p>
-            </div>
+            </Facebook>
             
-        </div> /* loginPage end */
+        </LoginPage> /* loginPage end */
         )
     }
 }

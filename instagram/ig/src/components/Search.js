@@ -4,12 +4,6 @@ import React from 'react'
 
 
 const Search = props => {
-  // let [username , setUsernames] = React.useState(props.item.username);
-
-  // const searchUser = () => {
-  //   let search = username;
-  //   setUsernames(search)
-  // }
   
   return (
   <div className='header'>

@@ -1,4 +1,4 @@
-.loginPage {
+/* .loginPage {
     margin-top: 100px;
     text-align: center;
     border: 2px solid black;
@@ -6,19 +6,19 @@
     height: 500px;
     margin-left: 300px;
     background-color: #E83A87;
-}
+} */
 
-.header-text {
+/* .header-text {
     color: white;
-}
+} */
 
-#ig {
+/* #ig {
     font-size: 80px;
     margin-top: 50px;
     text-shadow: 1px 1px 2px black;
-}
+} */
 
-.placehold input {
+/* input {
     background-color: #E83A87;
     height: 25px;
     width: 120px;
@@ -26,17 +26,17 @@
     border: 2px solid white;
     text-align: center;
     opacity: 1; 
-}
+} */
 
-.username {
+/* .username {
     margin-bottom: 15px;
-}
+} */
 
-.password {
+/* .password {
     margin-bottom: 15px;
-}
+} */
 
-.submit {
+/* .submit {
     background-color: #E83A87;
     color: #F8F8F8;
     height: 30px;
@@ -44,30 +44,30 @@
     border-radius: 10px;
     border: 2px solid white;
     text-shadow: 1px 1px 2px black;
-}
+} */
 
-.or {
+/* .or {
     color: white;
     text-shadow: 1px 1px 2px black;
-}
+} */
 
-h1 {
+/* h1 {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
     text-shadow: 1px 1px 2px black;
-}
+} */
 
-.fb {
+/* .fb {
     color: white;
     display: flex;
     text-align: center;
     margin-left: 313px;
     text-shadow: 1px 1px 2px black;
-}
+} */
 
-#fb {
+/* #fb {
     font-size: 30px;
     padding-top: 10px;
     margin-right: 10px;
     text-shadow: 1px 1px 2px black;
-}
+} */
