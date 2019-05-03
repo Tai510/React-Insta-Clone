@@ -87,8 +87,6 @@ const OR = styled.div `
 
 
 
-
-
 class Login extends React.Component {
     constructor() {
     super();

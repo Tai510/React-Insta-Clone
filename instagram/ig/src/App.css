@@ -1,7 +1,7 @@
 
 /* Search css start  */
 
-.header {
+/* .header {
   display: flex;
   justify-content: space-evenly;
 }
@@ -67,12 +67,12 @@
 
 .compass {
   padding-right: 20px;
-}
+} */
 
 /* Search css end */
 
 /* thumbnail css here */
- .thumbnail-container {
+ /* .thumbnail-container {
    display: flex;
    margin-left: 15px;
  }
@@ -131,5 +131,5 @@ span {
   border-top: 1px solid grey;
   margin-top: 10px;
   margin-left: 15px;
-}
+} */
 /* thumbnail css end */
